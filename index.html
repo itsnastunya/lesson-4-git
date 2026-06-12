@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <form action="#">
+
+        <h1 class="title">
+            <span>Login</span>
+            <span>|</span>
+            <span class="color-title">Register</span>
+        </h1>
+
+        <div class="text-top">
+            <p>Enter your email and password to register.</p>
+        </div>
+
+        <input type="text" name="username" placeholder="Username" minlength="3" maxlength="15" pattern="^[A-Za-z0-9_]+$"
+            required>
+
+        <input type="email" name="email" placeholder="Enter your email address" required>
+
+        <div class="password-box">
+            <input type="checkbox" id="eye-toggle" class="eye-checkbox">
+
+            <input class="password-input hidden-text" type="password" placeholder="Password" minlength="6" required>
+
+            <input class="password-input show-text" type="text" placeholder="Password" minlength="6">
+
+            <label for="eye-toggle" class="eye-label">
+                <img src="./img/Hide.png" alt="show password" class="eye-image">
+            </label>
+        </div>
+
+        <input type="tel" name="phone number" placeholder="Enter your phone number" pattern="^\+?380\d{9}$">
+
+        <input class="register-button" type="submit" name="register" value="Register">
+
+        <div class="text-below">
+            <p>Or register with</p>
+        </div>
+
+        <div class="social-button-1">
+            <button class="social-button-1" type="button"><img src="./img/Group.png" alt="google logo">Continue with
+                Google</button>
+        </div>
+        <br>
+        <div class="social-button-2">
+            <button class="social-button-2" type="button"><img src="./img/facebook.png" alt="facebook logo">Continue
+                with
+                Facebook</button>
+        </div>
+    </form>
+</body>
+
+</html>
