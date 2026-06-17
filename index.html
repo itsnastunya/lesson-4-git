@@ -7,13 +7,14 @@
     <title>Registration</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    
+
 
 </head>
 
 <body>
     <div class="box-form">
-  <h1 class="title">
+
+        <h1 class="title">
             <span>Login</span>
             <span>|</span>
             <span class="color-title">Register</span>
@@ -23,56 +24,53 @@
             <p>Enter your email and password to register.</p>
         </div>
 
-    <form action="#">
-        <input type="text" name="username" placeholder="Username" minlength="3" maxlength="15" pattern="^[A-Za-z0-9_]+$"
-            required>
+        <form action="#">
+            <input type="text" name="username" placeholder="Username" minlength="3" maxlength="15"
+                pattern="^[A-Za-z0-9_]+$" required>
 
-        <input type="email" name="email" placeholder="Enter your email address" required>
+            <input type="email" name="email" placeholder="Enter your email address" required>
 
-        <div class="password-box">
-             <input class="input password" type="password" placeholder="Password" minlength="6" required>
-             <button type="button" class="toggle-password">
-                <img src="./img/Hide.png" alt="hide icon" width="20" height="20">
-            </button>
-        </div>
+            <div class="password-box">
+                <input class="input password" type="password" placeholder="Password" minlength="6" required>
+                <button type="button" class="toggle-password">
+                    <img src="./img/Hide.png" alt="hide icon" width="20" height="20">
+                </button>
+            </div>
 
-        <input type="tel" name="phone number" placeholder="Enter your phone number" pattern="^\+?380\d{9}$">
+            <input type="tel" name="phone number" placeholder="Enter your phone number" pattern="^\+?380\d{9}$">
 
-        <input class="register-button" type="submit" name="register" value="Register">
-    </form>
+            <input class="register-button" type="submit" name="register" value="Register">
+        </form>
 
-     <div class="text-below">
-            <p><span><img src="./img/Line 7.png" alt="line"></span>
+        <div class="text-below">
+            <p><span><img src="./img/Line.png" alt="line"></span>
                 <span>Or register with</span>
-            <span><img src="./img/Line 7.png" alt="line"></span>
-        </p>
+                <span><img src="./img/Line.png" alt="line"></span>
+            </p>
         </div>
 
-        <div class="social-button-1">
-            <button class="social-button-1" type="button"><img src="./img/Group.png" alt="google logo">Continue with
-                Google</button>
-        </div>
-        <br>
-        <div class="social-button-2">
-            <button class="social-button-2" type="button"><img src="./img/facebook.png" alt="facebook logo">Continue
-                with
-                Facebook</button>
-        </div>
+        <button class="social-button-1" type="button"><img src="./img/Group.png" alt="google logo">Continue with
+            Google</button>
+
+        <button class="social-button-2" type="button"><img src="./img/facebook.png" alt="facebook logo">Continue
+            with
+            Facebook</button>
+
     </div>
-   
 
-        <script>
-            const button = document.querySelector('.toggle-password')
-            const passwordInput = document.querySelector('.password.input')
 
-            button.addEventListener('click', (event) => {
-        if (passwordInput.getAttribute('type') === 'text') {
-            passwordInput.setAttribute('type', 'password');
-        } else {
-            passwordInput.setAttribute('type', 'text');
-        }
-    })
-        </script>
+    <script>
+        const button = document.querySelector('.toggle-password')
+        const passwordInput = document.querySelector('.password.input')
+
+        button.addEventListener('click', (event) => {
+            if (passwordInput.getAttribute('type') === 'text') {
+                passwordInput.setAttribute('type', 'password');
+            } else {
+                passwordInput.setAttribute('type', 'text');
+            }
+        })
+    </script>
 </body>
 
 </html>

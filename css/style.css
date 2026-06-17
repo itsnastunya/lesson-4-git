@@ -1,30 +1,35 @@
-body{
+body {
     background-color: grey;
     display: flex;
-    justify-content: center; /* Центрує картку по горизонталі (ліво-право) */
-    align-items: center;     /* Центрує картку по вертикалі (верх-низ) */
-    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
-.box-form{
+
+.box-form {
     background-color: #FFFFFF;
     width: 500px;
-    padding: 50px 100px; 
+    padding: 50px 100px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     border-bottom: 10px solid #46A358;
 }
+
 input {
     display: block;
     width: 300px;
     height: 40px;
     margin-bottom: 16px;
+    padding: 0 14px;
+    box-sizing: border-box;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
 }
 
 form {
-    width: 500px;
-    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
@@ -44,6 +49,8 @@ form {
     font-size: 13px;
     font-weight: 300;
     margin-bottom: 14px;
+    width: 300px;
+    text-align: left;
 }
 
 .register-button {
@@ -55,6 +62,7 @@ form {
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 36px;
+    margin-top: 25px;
 }
 
 .text-below {
@@ -65,15 +73,7 @@ form {
     margin-bottom: 27px;
 }
 
-.social-button-1 {
-    width: 300px;
-    height: 40px;
-    color: #727272;
-    font-size: 13px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
+.social-button-1,
 .social-button-2 {
     width: 300px;
     height: 40px;
@@ -81,14 +81,35 @@ form {
     font-size: 13px;
     font-weight: 500;
     margin-bottom: 15px;
-}
-
-.password-box{
+    background-color: transparent;
+    border: 1px solid #727272;
+    border-radius: 5px;
     display: flex;
     align-items: center;
-    position: relative;
+    justify-content: center;
+    gap: 10px;
 }
-.toggle-password{
-    background: none;   
+
+.password-box {
+    display: block;
+    width: 300px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.password-box input {
+    width: 300px;
+    margin-bottom: 0;
+
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    background: none;
     border: none;
 }
