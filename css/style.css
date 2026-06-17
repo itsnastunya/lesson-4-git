@@ -66,35 +66,12 @@ form {
     margin-bottom: 15px;
 }
 
-.password-box {
+.password-box{
+    display: flex;
+    align-items: center;
     position: relative;
-    width: 300px;
 }
-
-.password-box .show-text {
-    display: none;
-}
-
-.eye-checkbox {
-    display: none;
-}
-
-.eye-label {
-    position: absolute;
-    right: 10px;
-    top: 10px; 
-    cursor: pointer;
-}
-
-.eye-image {
-    width: 20px;
-    height: 20px;
-}
-
-.eye-checkbox:checked ~ .hidden-text {
-    display: none;
-}
-
-.eye-checkbox:checked ~ .show-text {
-    display: block;
+.toggle-password{
+    background: none;   
+    border: none;
 }
