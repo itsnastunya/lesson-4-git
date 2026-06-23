@@ -1,0 +1,76 @@
+* {
+    outline: none;
+    border: none;
+
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+section {
+    margin-top: 50vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+
+
+    nav,
+    img,
+    button {
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .container {
+        padding-top: 25px;
+        border-bottom: 0.3px solid #46A358;
+    }
+
+    button {
+        margin-left: 370px;
+    }
+
+    nav {
+        margin-left: 230px;
+
+        a {
+            &:not(:first-of-type) {
+                margin-left: 50px;
+            }
+
+            display: inline-block;
+            padding-bottom: 25px;
+            font-weight: 400;
+            color: #3D3D3D;
+            text-decoration: none;
+        }
+
+        a:active,
+        a.active {
+            font-weight: 700;
+            border-bottom: 1px solid #46A358;
+        }
+    }
+}
+
+button {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    background: #46A358;
+    padding: 8px 17px 8px;
+
+    &.large-btn {
+        padding: 11px 26px 9px;
+        font-weight: 700;
+    }
+}
