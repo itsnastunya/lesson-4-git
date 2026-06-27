@@ -40,8 +40,9 @@ header {
                 margin-left: 50px;
             }
 
+            padding-top: 10px;
+            padding-bottom: 15px;
             display: inline-block;
-            padding-bottom: 25px;
             font-weight: 400;
             color: #3D3D3D;
             text-decoration: none;
