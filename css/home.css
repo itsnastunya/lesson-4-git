@@ -4,6 +4,10 @@
 
 }
 
+body {
+    font-family: "Montserrat";
+}
+
 button,
 a {
     cursor: pointer;
@@ -23,21 +27,33 @@ header {
         display: inline-block;
     }
 
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    img {
+        float: left;
+    }
+
     .container {
         padding-top: 25px;
         border-bottom: 0.3px solid #46A358;
     }
 
     button {
-        margin-left: 370px;
+        float: right;
     }
 
     nav {
         margin-left: 230px;
+        max-width: 350px;
+        width: 100%;
 
         a {
             &:not(:first-of-type) {
-                margin-left: 50px;
+                margin-left: 30px;
             }
 
             padding-top: 10px;
@@ -46,12 +62,13 @@ header {
             font-weight: 400;
             color: #3D3D3D;
             text-decoration: none;
+            border-bottom: 3px solid transparent;
         }
 
         a:active,
-        a.active {
+        a:hover {
             font-weight: 700;
-            border-bottom: 1px solid #46A358;
+            border-color: #46A358;
         }
     }
 }
@@ -64,6 +81,14 @@ button {
     border-radius: 6px;
     background: #46A358;
     padding: 8px 17px 8px;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        background: #1f4928;
+    }
 
     &.large-btn {
         padding: 11px 26px 9px;
