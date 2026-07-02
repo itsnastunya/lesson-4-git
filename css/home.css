@@ -1,6 +1,7 @@
 * {
     outline: none;
     border: none;
+    box-sizing: border-box;
 
 }
 
@@ -158,5 +159,222 @@ button {
             max-width: 100%;
             height: auto;
         }
+    }
+}
+
+.sidebar {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 310px;
+    margin-right: 40px;
+    margin-top: 26px;
+    background-color: #FBFBFB;
+
+
+    .categories-box {
+        padding: 14px 18px 370px 18px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 16px;
+        color: #3D3D3D;
+        margin: 0;
+        margin-bottom: 7px;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 12px;
+        margin: 0;
+
+        li {
+            a {
+                display: inline-block;
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 40px;
+                color: #3D3D3D;
+                width: 100%;
+            }
+
+            a:active,
+            a:hover {
+                font-weight: 700;
+                color: #46A358;
+            }
+        }
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        margin-top: 20px;
+    }
+}
+
+.shop-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 840px;
+    box-sizing: border-box;
+    margin-top: 26px;
+
+    .filter-bar {
+        width: 100%;
+        margin-bottom: 31px;
+
+        &::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .filter-list {
+            float: left;
+
+            .tab {
+                display: inline-block;
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 16px;
+                color: #3D3D3D;
+                margin-right: 40px;
+                position: relative;
+                border-bottom: 2px solid transparent;
+                padding-bottom: 7px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+            }
+
+            a:active,
+            a:hover {
+                font-weight: 700;
+                border-color: #46A358;
+                color: #46A358;
+            }
+
+        }
+
+        .sort-options {
+            float: right;
+            padding-bottom: 7px;
+
+            .sort-text {
+                font-size: 15px;
+                color: #3D3D3D;
+                font-weight: 400;
+                line-height: 16px;
+                vertical-align: middle;
+            }
+
+            img {
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.products-grid {
+    width: 100%;
+
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .products-card {
+        float: left;
+        width: 258px;
+        height: 350px;
+        margin-right: 33px;
+        margin-bottom: 70px;
+        box-sizing: border-box;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        img {
+            display: block;
+            width: 258px;
+            height: 300px;
+            background-color: #FBFBFB;
+            box-sizing: border-box;
+            padding: 31px 4px 19px;
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 16px;
+            color: #3D3D3D;
+            margin: 0;
+            margin-top: 12px;
+            margin-bottom: 6px;
+        }
+
+        span {
+            display: block;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 16px;
+            color: #46A358;
+            margin: 0;
+        }
+    }
+}
+
+.page-numbering {
+    float: right;
+    margin-top: 90px;
+    margin-bottom: 82px;
+
+    a {
+        display: inline-block;
+        vertical-align: middle;
+        width: 35px;
+        height: 35px;
+        line-height: 16px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 300;
+        color: #3D3D3D;
+        border: 1px solid #E5E5E5;
+        border-radius: 4px;
+        margin-left: 10px;
+        padding: 9px 13px 10px 12px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        img {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    a:active,
+    a:hover {
+        font-weight: 700;
+        border-color: #46A358;
+        background-color: #46A358;
+        color: #FFFFFF;
     }
 }
