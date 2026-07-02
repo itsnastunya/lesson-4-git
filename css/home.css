@@ -169,13 +169,14 @@ button {
     width: 310px;
     margin-right: 40px;
     margin-top: 26px;
-    background-color: #FBFBFB;
+    
 
 
     .categories-box {
         padding: 14px 18px 377px 18px;
         box-sizing: border-box;
         width: 100%;
+        background-color: #FBFBFB;
     }
 
     h2 {
@@ -213,9 +214,10 @@ button {
 
     img {
         display: block;
-        width: 100%;
+        width: 310px;
         height: 470px;
         margin: 0;
+        object-fit: cover;
     }
 }
 
