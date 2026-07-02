@@ -5,6 +5,9 @@ body {
     align-items: center;
 }
 
+body, input, button{
+    font-family: "Montserrat";
+}
 .box-form {
     background-color: #FFFFFF;
     width: 500px;
@@ -25,6 +28,13 @@ input {
     box-sizing: border-box;
     border: 1px solid #EAEAEA;
     border-radius: 5px;
+}
+
+form {
+    input:focus{
+        border: 2px solid #46A358;
+        outline: none;
+    }
 }
 
 form {
@@ -63,6 +73,14 @@ form {
     font-weight: 700;
     margin-bottom: 36px;
     margin-top: 25px;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        background: #1f4928;
+    }
 }
 
 .text-below {
