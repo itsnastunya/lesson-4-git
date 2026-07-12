@@ -41,24 +41,87 @@ header {
     }
 
     nav {
-        display: flex;
-        align-items: flex-end;
-        gap: 50px;
 
-        a {
+        align-items: flex-end;
+
+        & > ul {
+            display: flex;
+            gap: 50px;
+            padding: 0;
+            margin: 0;
+            align-items: center;
+            list-style: none;
+        }
+
+        & >ul>li {
+
+            position: relative;
             padding-top: 10px;
             padding-bottom: 25px;
             display: inline-block;
-            font-weight: 400;
-            color: #3D3D3D;
-            text-decoration: none;
             border-bottom: 3px solid transparent;
         }
 
-        a:active,
-        a:hover {
-            font-weight: 700;
+        a {
+            font-weight: 400;
+            color: #3D3D3D;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        >ul>li:hover {
             border-color: #46A358;
+        }
+
+        >ul>li:active>a,
+        >ul>li:hover>a {
+            font-weight: 700;
+        }
+
+        .sublist {
+            position: absolute;
+            padding-top: 12px;
+            display: none;
+            width: 188px;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            span {
+                text-align: end;
+            }
+
+            li {
+                background: #EDF6EE;
+                width: 100%;
+                padding: 7px 14px 8px;
+
+                &:hover{
+                    background: #1A712A;
+                    > a{
+                        font-weight: 700;
+                        color: #FFFFFF;
+                    }
+                    > a > span{
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            &.second{
+                top: 12px;
+                left: 100%;
+                transform: none;
+                padding-top: 0;
+                padding-left: 2px;
+            }
+        }
+
+        > ul > li:hover > .sublist,
+        > ul > li:hover > .sublist > li:hover .sublist {
+            display: block;
         }
     }
 }
@@ -351,12 +414,16 @@ button {
                 justify-content: center;
                 padding: 0;
 
-                img {
+                svg {
                     width: 20px;
                     height: 20px;
                     padding: 0;
                     background: transparent;
                 }
+            }
+
+            button:hover svg path {
+                fill: #46A358;
             }
         }
     }
