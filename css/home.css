@@ -819,6 +819,7 @@ footer {
             .contact-link {
                 font-size: 14px;
                 font-weight: 400;
+                text-decoration: none;
                 color: #3D3D3D;
                 display: flex;
                 align-items: center;
