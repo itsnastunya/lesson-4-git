@@ -164,12 +164,13 @@ button {
     align-items: center;
     background: #F5F5F580;
     max-width: 1200px;
-    max-height: 450px;
+    height: 450px;
     margin: 0 auto;
     margin-top: 12px;
+    margin-bottom: 20px;
 
     .home-text {
-        width: 65%;
+        width: 55%;
         box-sizing: border-box;
         padding: 40px;
 
@@ -179,6 +180,7 @@ button {
             color: #3D3D3D;
             text-transform: uppercase;
             letter-spacing: 0.1em;
+            margin-top: -23px;
             margin-bottom: 7px;
             line-height: 16px;
         }
@@ -209,7 +211,7 @@ button {
     }
 
     .home-media {
-        width: 35%;
+        width: 45%;
         box-sizing: border-box;
         text-align: right;
 
@@ -307,7 +309,6 @@ button {
                 font-size: 15px;
                 line-height: 16px;
                 color: #3D3D3D;
-                margin-right: 40px;
                 position: relative;
                 border-bottom: 2px solid transparent;
                 padding-bottom: 7px;
@@ -476,7 +477,7 @@ button {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
-    margin-top: 90px;
+    margin-top: 17px;
     margin-bottom: 82px;
 
     a {
@@ -493,7 +494,6 @@ button {
         color: #3D3D3D;
         border: 1px solid #E5E5E5;
         border-radius: 4px;
-        margin-left: 10px;
         padding: 9px 13px 10px 12px;
 
         &:first-child {
@@ -518,7 +518,7 @@ button {
 .plant-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 94px;
+    margin-top: 60px;
     width: 100%;
 
     .plant-box {
@@ -532,14 +532,14 @@ button {
         box-sizing: border-box;
 
         img.care-img {
-            width: 48%;
+            width: 52%;
             height: 292px;
             display: block;
             align-self: flex-end;
         }
 
         .plant-content {
-            width: 52%;
+            width: 48%;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
@@ -549,6 +549,7 @@ button {
                 font-weight: 900;
                 line-height: 24px;
                 color: #3D3D3D;
+                margin-top: 5px;
                 margin-bottom: 9px;
                 text-transform: uppercase;
                 max-width: 150px;
@@ -565,6 +566,12 @@ button {
                 max-width: 292px;
                 width: 100%;
                 text-align: right;
+            }
+
+            .care-btn {
+                span {
+                    font-weight: 500;
+                }
             }
         }
 
@@ -605,7 +612,7 @@ button {
     width: 100%;
 
     .blog-card {
-        width: 23%;
+        width: 268px;
         box-sizing: border-box;
 
         .blog-img {
@@ -896,7 +903,6 @@ footer {
                     }
                 }
 
-                /* Блок відображення платіжних систем (через фоновий SVG) */
                 .payment-methods {
                     width: 100%;
                     max-width: 224px;
@@ -909,6 +915,7 @@ footer {
             }
         }
     }
+
     .footer-copyright {
         text-align: center;
         font-size: 14px;
