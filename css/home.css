@@ -36,42 +36,42 @@ header {
     }
 
     .header-actions {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    align-self: flex-end;
-    margin-bottom: 18px;
-}
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        align-self: flex-end;
+        margin-bottom: 18px;
+    }
 
-.icon-btn {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: none;
-    border: none;
-    padding: 0;
-    color: #3D3D3D;
-}
+    .icon-btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: none;
+        padding: 0;
+        color: #3D3D3D;
+    }
 
-.login-btn {
-    padding: 0;
-    background: none;
-    border: none;
-}
+    .login-btn {
+        padding: 0;
+        background: none;
+        border: none;
+    }
 
-.login-btn a {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: #FFFFFF;
-    background: #46A358;
-    border-radius: 6px;
-    padding: 8px 17px 8px;
-    font-size: 16px;
-    font-weight: 500;
-}
+    .login-btn a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        color: #FFFFFF;
+        background: #46A358;
+        border-radius: 6px;
+        padding: 8px 17px 8px;
+        font-size: 16px;
+        font-weight: 500;
+    }
 
     nav {
 
@@ -275,10 +275,74 @@ button {
     margin-top: 26px;
 
     .categories-box {
-        padding: 14px 18px 377px 18px;
+        padding: 14px 18px 19px 18px;
         box-sizing: border-box;
         width: 100%;
         background-color: #FBFBFB;
+    }
+
+    ul li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .count {
+        font-size: 14px;
+        color: #3D3D3D;
+        transition: color 0.5s ease;
+    }
+
+    ul li:hover .count {
+        color: #46A358;
+        font-weight: 700;
+    }
+
+    ul li a.active {
+        color: #46A358;
+        font-weight: 700;
+    }
+
+    .price-range-box {
+        margin-top: 36px;
+
+        .price-slider {
+            width: 100%;
+            accent-color: #46A358;
+            margin: 12px 0;
+            padding-left: 30px;
+        }
+
+        .price-value {
+            font-size: 15px;
+            color: #3D3D3D;
+            margin-bottom: 16px;
+            padding-left: 12px;
+
+            span {
+                color: #46A358;
+                font-weight: 700;
+            }
+        }
+
+        .filter-btn {
+            background: #46A358;
+            color: #FFFFFF;
+            border-radius: 6px;
+            padding: 8px 25px;
+            font-size: 16px;
+            font-weight: 700;
+            transition: opacity 0.25s ease;
+            margin-left: 12px;
+
+            &:hover {
+                opacity: 0.85;
+            }
+        }
+    }
+
+    .size-box {
+        margin-top: 46px;
     }
 
     h2 {
@@ -323,6 +387,7 @@ button {
         object-fit: cover;
     }
 }
+
 
 .shop-content {
     width: 840px;
