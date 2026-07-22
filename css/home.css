@@ -6,6 +6,37 @@
     box-sizing: border-box;
 }
 
+body.loading .preloader:after {
+    content: '';
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 32px;
+    height: 32px;
+    border: solid;
+    border-width: 4px;
+    border-radius: 50%;
+    border-top-color: #FBFBFB;
+    border-bottom-color: #1A712A;
+    border-right-color: #1A712A;
+    border-left-color: #1A712A;
+
+    animation: rotate 0.5s linear infinite;
+}
+
+body.loading .preloader {
+    background: #FBFBFB;
+    position: fixed;
+    inset: 0;
+    z-index: 3;
+}
+
+body.loading {
+    overflow: hidden;
+}
+
 body,
 button {
     font-family: "Cera Pro";
@@ -1040,5 +1071,16 @@ footer {
         padding-top: 6px;
         padding-bottom: 22px;
         margin: 0;
+    }
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }

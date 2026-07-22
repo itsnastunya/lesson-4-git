@@ -11,6 +11,14 @@
 </head>
 
 <body>
+  <script>
+    document.querySelector('body').classList.add('loading')
+
+    setTimeout(()=>{
+      document.querySelector('body').classList.remove('loading')
+    },1000)
+  </script>
+  <div class="preloader"></div>
   <header>
 
     <div class="container">
