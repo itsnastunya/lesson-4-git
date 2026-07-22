@@ -1,4 +1,5 @@
 @import "./font.css";
+
 body {
     background-color: grey;
     display: flex;
@@ -6,9 +7,12 @@ body {
     align-items: center;
 }
 
-body, input, button{
+body,
+input,
+button {
     font-family: "Cera Pro";
 }
+
 .box-form {
     background-color: #FFFFFF;
     width: 500px;
@@ -32,7 +36,7 @@ input {
 }
 
 form {
-    input:focus{
+    input:focus {
         border: 2px solid #46A358;
         outline: none;
     }
@@ -131,4 +135,79 @@ form {
     align-items: center;
     background: none;
     border: none;
+}
+
+
+.checkbox-wrapper-31 {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.checkbox-wrapper-31 .background {
+    fill: #ccc;
+    transition: ease all 0.6s;
+}
+
+.checkbox-wrapper-31 .stroke {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+    stroke-dashoffset: 100;
+    stroke-dasharray: 100;
+    transition: ease all 0.6s;
+}
+
+.checkbox-wrapper-31 .check {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    stroke-dashoffset: 22;
+    stroke-dasharray: 22;
+    transition: ease all 0.6s;
+}
+
+.checkbox-wrapper-31 input[type=checkbox] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    opacity: 0;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.checkbox-wrapper-31 input[type=checkbox]:hover {
+    cursor: pointer;
+}
+
+.checkbox-wrapper-31 input[type=checkbox]:checked+svg .background {
+    fill: #6cbe45;
+}
+
+.checkbox-wrapper-31 input[type=checkbox]:checked+svg .stroke {
+    stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper-31 input[type=checkbox]:checked+svg .check {
+    stroke-dashoffset: 0;
+}
+
+.agreement {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #8b8b8b;
+    text-align: left;
+    cursor: pointer;
 }
