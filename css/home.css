@@ -1084,3 +1084,331 @@ footer {
         transform: rotate(360deg);
     }
 }
+
+/* Адаптив */
+
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .plant-wrapper .plant-box img.care-img {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    header nav ul {
+        gap: 30px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .main-container .home-text,
+    .main-container .home-media {
+        width: 100%;
+    }
+
+    .main-container .home-text .text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-text {
+        align-items: center;
+    }
+
+    .large-btn {
+        margin: 0 auto;
+    }
+
+    .main-container .home-media img {
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .shop-content {
+        width: 100%;
+    }
+
+    .products-grid {
+        justify-content: center;
+    }
+
+    .blog-card {
+        width: auto;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .page-numbering {
+        justify-content: center;
+    }
+
+    .plant-wrapper .plant-box img.care-img {
+        height: auto;
+    }
+
+    .footer-features {
+        flex-wrap: wrap;
+    }
+
+    footer .container .footer-features .feature-item {
+        flex: 0 1 204px;
+        min-width: 0;
+    }
+
+    footer .container .footer-features .newsletter-box {
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    footer .container .footer-features .newsletter-box .subscribe-form {
+        justify-content: center;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer .container .footer-features .newsletter-box .newsletter-desc {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer .container .footer-contact-gradient {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 16px;
+        column-gap: 24px;
+    }
+
+    footer .container .footer-contact-gradient .footer-logo {
+        flex: 0 0 100%;
+        display: flex;
+        justify-content: center;
+        width: auto;
+        margin-bottom: 8px;
+    }
+
+    footer .container .footer-contact-gradient .footer-logo svg {
+        width: 150px;
+        height: 34px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+
+    .plant-wrapper {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .plant-wrapper .plant-box {
+        max-width: 100%;
+    }
+
+    .plant-wrapper .plant-box img.care-img {
+        width: 35%;
+    }
+
+    .plant-wrapper .plant-box .plant-content {
+        width: 65%;
+    }
+
+    .plant-wrapper .plant-box .plant-content h3,
+    .plant-wrapper .plant-box .plant-content p {
+        max-width: none;
+    }
+
+    .blogs-wrapper {
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+
+    .blogs-wrapper .blog-card {
+        flex: 0 0 calc(50% - 22px);
+    }
+
+    .blogs-wrapper .blog-card .blog-content {
+        max-width: none;
+    }
+
+    .blogs-wrapper .blog-card .blog-content .blogs-top-text,
+    .blogs-wrapper .blog-card .blog-content h2,
+    .blogs-wrapper .blog-card .blog-content p {
+        max-width: none;
+    }
+
+    footer .container .footer-features .feature-item {
+        flex: 1 1 150px;
+        min-width: 0;
+    }
+
+    footer .container .footer-links-grid {
+        flex-wrap: wrap;
+        row-gap: 24px;
+    }
+
+    footer .container .footer-links-grid .media-column {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    footer .container .footer-links-grid .media-column .social-icons {
+        justify-content: center;
+    }
+
+    footer .container .footer-links-grid .media-column .payment-methods {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    header .container {
+        gap: 10px;
+    }
+
+    header .header-actions {
+        gap: 6px;
+    }
+
+    header .login-btn {
+        padding: 0;
+    }
+
+    header .login-btn a {
+        padding: 8px;
+    }
+
+    .login-btn a span {
+        display: none;
+    }
+
+    .main-container .home-text h1 {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    .sort-text {
+        display: none;
+    }
+
+    .blogs-wrapper .blog-card {
+        flex: 0 0 100%;
+    }
+
+    .plant-wrapper .plant-box {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 24px 20px;
+    }
+
+    .plant-wrapper .plant-box img.care-img {
+        width: 70%;
+        height: auto;
+        align-self: center;
+    }
+
+    .plant-wrapper .plant-box .plant-content {
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .plant-wrapper .plant-box .plant-content h3,
+    .plant-wrapper .plant-box .plant-content p {
+        text-align: center;
+    }
+
+    footer .container .footer-features .feature-item {
+        flex: 0 0 100%;
+        border-right: none;
+        text-align: center;
+    }
+
+    footer .container .footer-features .newsletter-box .subscribe-form input {
+        font-size: 12px;
+        padding: 0 8px;
+    }
+
+    footer .container .footer-features .newsletter-box .subscribe-form button {
+        font-size: 14px;
+        padding: 0 14px;
+    }
+
+    footer .container .footer-features .feature-item .feature-icon {
+        justify-content: center;
+    }
+
+    footer .container .footer-contact-gradient {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    footer .container .footer-links-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    footer .container .footer-links-grid .links-column {
+        width: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .main-container .home-text h1 {
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    .shop-content .filter-bar .filter-list .tab {
+        font-size: 12px;
+    }
+
+    .shop-content .filter-bar .sort-options .sort-text {
+        font-size: 12px;
+    }
+
+    .main-container {
+        padding: 24px 15px;
+    }
+
+    .main-container .home-text .text {
+        margin-bottom: 24px;
+    }
+
+    .filter-list {
+        gap: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 280px) {}
