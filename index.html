@@ -14,9 +14,9 @@
   <script>
     document.querySelector('body').classList.add('loading')
 
-    setTimeout(()=>{
+    setTimeout(() => {
       document.querySelector('body').classList.remove('loading')
-    },1000)
+    }, 1000)
   </script>
   <div class="preloader"></div>
   <header>
@@ -53,13 +53,13 @@
 
       <div class="header-actions">
         <button class="icon-btn" type="button">
-          <svg width="20" height="20">
+          <svg class="icon-search-svg" width="20" height="20">
             <use xlink:href="./sprite.svg#icon-search"></use>
           </svg>
         </button>
 
         <button class="icon-btn" type="button">
-          <svg width="31" height="24">
+          <svg class="icon-basket-svg" width="31" height="24">
             <use xlink:href="./sprite.svg#icon-basket-full"></use>
           </svg>
         </button>
@@ -166,7 +166,8 @@
             </div>
 
             <div class="sort-options">
-              <span class="sort-text">Sort by: Default sorting</span> <img src="./img/Arrow.svg" alt="arrow">
+              <span class="sort-text">Sort by: <span class="sort-value">Default sorting</span></span> <img
+                src="./img/Arrow.svg" alt="arrow">
             </div>
           </div>
 
@@ -541,7 +542,7 @@
       <div class="footer-features">
         <div class="feature-item">
           <div class="feature-icon">
-            <svg>
+            <svg width="77" height="96">
               <use xlink:href="./sprite.svg#icon-care"></use>
             </svg>
           </div>
@@ -551,7 +552,7 @@
 
         <div class="feature-item">
           <div class="feature-icon">
-            <svg>
+            <svg width="83" height="93">
               <use xlink:href="./sprite.svg#icon-renovation"></use>
             </svg>
           </div>
@@ -561,7 +562,7 @@
 
         <div class="feature-item">
           <div class="feature-icon">
-            <svg>
+            <svg width="90" height="93">
               <use xlink:href="./sprite.svg#icon-watering"></use>
             </svg>
           </div>
